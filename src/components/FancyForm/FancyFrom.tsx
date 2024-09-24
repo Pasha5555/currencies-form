@@ -78,6 +78,7 @@ export const FancyFrom: React.FC = () => {
                             endIcon={<CurrencyBitcoinSharpIcon />} 
                             size='large'
                             onClick={onFormSubmit}
+                            disabled={!!error}
                         >
                             Confirm swap
                         </StyledButton>
