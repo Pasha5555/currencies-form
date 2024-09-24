@@ -1,5 +1,5 @@
-import { FormControl, FormHelperText, InputLabel, MenuItem, Select, SelectChangeEvent, SvgIcon } from '@mui/material';
-import React, { Dispatch, ReactNode, SetStateAction } from 'react';
+import { FormControl, MenuItem, SelectChangeEvent } from '@mui/material';
+import React, { ReactNode } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { CustomIcon } from '../CustomIcon/CustomIcon';
 import { StyledSelect } from './styled';
@@ -17,15 +17,12 @@ interface ICurencyOption {
 }
 
 export const CustomSelect: React.FC<ICustomSelectProps> = ({value, onChangeOption, options}: ICustomSelectProps) => {
-    console.log(options);
-    
     return (
         <FormControl required sx={{ m: 0.5, width: 150 }}>
             <StyledSelect
                 labelId="demo-simple-select-required-label"
                 id="demo-simple-select-required"
                 value={value}
-                // label="Age *"
                 onChange={onChangeOption}
                 sx={{borderTopRightRadius: '10px', borderBottomRightRadius: '10px'}}
             >
@@ -42,4 +39,4 @@ export const CustomSelect: React.FC<ICustomSelectProps> = ({value, onChangeOptio
             </StyledSelect>
       </FormControl>
     )
-}
+};

@@ -1,4 +1,3 @@
-import React from 'react';
 import { CURRENCIES_DATA, TOKEN_IMG_URL } from '../constants/constants';
 
 interface ICurrency {
