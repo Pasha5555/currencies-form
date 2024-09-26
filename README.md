@@ -1,2 +1,2 @@
 #The application is deployed by url:
-[LINK](https://master--currencies-form.netlify.app/)
+[LINK](https://currencies-form.netlify.app/)
